@@ -14,7 +14,6 @@ class SearchBar extends React.Component {
         // TODO: Make sure to add callback from parent component
     };
 
-
     render() {
         return (
 
