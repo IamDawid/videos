@@ -8,6 +8,10 @@ class App extends React.Component {
 
     state = { videos: [], selectedVideo: null };
 
+    componentDidMount() {
+        this.onTermSubmit('buildings');
+    }
+
     onTermSubmit = async (term) => {
 
         const response = await youtube.get('/search', {
@@ -16,7 +20,10 @@ class App extends React.Component {
             }
         });
 
-        this.setState({ videos: response.data.items });   //updating state (videos) with fetched data (data.items is all that's important here)
+        this.setState({
+            videos: response.data.items,
+            selectedVideo: response.data.items[0]  //selecting first video as a deafult
+        });   //updating state (videos) with fetched data (data.items is all that's important here)
     };
 
     onVideoSelect = (video) => {
