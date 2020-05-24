@@ -12,7 +12,7 @@ Simply download or clone this project and run npm start or npm test or npm run b
 ## Built With
 
 * [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) - Used to create initial boilerplate
-* [SemanticUI](https://semantic-ui.com/) - Styling, icons and loading spinner
+* [SemanticUI](https://semantic-ui.com/) - CSS styling 
 * [Axios](https://github.com/axios/axios) - HTTP request handling
 * [YouTube Data API V3](https://developers.google.com/youtube/v3) - used to obtain search results
 
